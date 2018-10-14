@@ -1,0 +1,16 @@
+{
+  "name": "shri-node-hw",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "author": "nikkypizza",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "express": "^4.16.4",
+    "moment": "^2.22.2",
+    "npm": "^6.4.1",
+    "nodemon": "^1.18.4"
+  }
+}
