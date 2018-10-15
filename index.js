@@ -15,7 +15,7 @@ const startTime = Date.now();
 const eventsJSONfile = JSON.parse(fs.readFileSync(DATA_FS_PATH, `utf8`)); // Синхронно заводим переменную для файла с данными
 
 app.get(routes.ROOT, (request, response) => {
-  response.send(`<h1>Express server is up and running 👌</h1>`)
+  response.send(`<h1>Express server is up and running 👌</h1>`);
 });
 
 app.get(routes.STATUS, (request, response) => {
@@ -42,5 +42,5 @@ app.listen(PORT, (err) => {
   if (err) {
     return console.log(``, err);
   }
-  console.log(`Server is listening on port ${PORT}`);
+  return console.log(`Server is listening on port ${PORT}`);
 });

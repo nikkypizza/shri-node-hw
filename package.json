@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "eslint": "eslint \"**/*.js\""
+  },
   "author": "nikkypizza",
   "license": "ISC",
   "dependencies": {},
@@ -11,6 +13,8 @@
     "express": "^4.16.4",
     "moment": "^2.22.2",
     "npm": "^6.4.1",
-    "nodemon": "^1.18.4"
+    "nodemon": "^1.18.4",
+    "eslint": "4.19.1",
+    "eslint-config-htmlacademy": "0.5.x"
   }
 }
