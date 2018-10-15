@@ -1,9 +1,8 @@
 const sortDataByType = (data, type) => {
-  const inputData = data;
   const outputData = {};
   let indexCounter = 0;
 
-  for (let element of inputData) {
+  for (let element of data) {
     if (element.type === type) {
       outputData[indexCounter] = element;
       indexCounter++;
