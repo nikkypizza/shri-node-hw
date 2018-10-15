@@ -1,6 +1,7 @@
 const express = require(`express`);
 const moment = require(`moment`);
 const fs = require(`fs`);
+// const sortDataByType = require(`./utils/data-sort.js`);
 
 const PORT = 8000;
 const DATA_FS_PATH = `./data/events.json`;
@@ -9,6 +10,10 @@ const routes = {
   STATUS: `/status`,
   EVENTS_DATA: `/api/events`
 };
+// const dataTypes = {
+//   CRITICAL: `critical`,
+//   INFO: `info`
+// };
 
 const app = express();
 const startTime = Date.now();
@@ -29,6 +34,9 @@ app.get(routes.STATUS, (request, response) => {
 app.get(routes.EVENTS_DATA, (request, response) => {
   response.send(eventsJSONfile);
 });
+
+// response.send(sortDataByType(eventsJSONfile.events, dataTypes.INFO)); // Данные отсортированные по info
+// response.send(sortDataByType(eventsJSONfile.events, dataTypes.CRITICAL)); // Данные отсортированные по critical
 
 // Отдает 404, если путь отличен от routes
 app.use((request, response) => {
