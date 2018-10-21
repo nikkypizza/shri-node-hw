@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "eslint": "eslint \"**/*.js\""
+    "eslint": "eslint \"**/*.js\" --fix",
+    "start": "nodemon index.js"
   },
   "author": "nikkypizza",
   "license": "ISC",
